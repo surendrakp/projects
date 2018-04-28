@@ -1,0 +1,4 @@
+
+##########get an image in server side (portlet)########################
+
+resourceRequest.getPortletSession().getPortletContext().getResourceAsStream("/images/myImage.png");
