@@ -2,3 +2,7 @@
 ##########get an image in server side (portlet)########################
 
 resourceRequest.getPortletSession().getPortletContext().getResourceAsStream("/images/myImage.png");
+
+############### Add param in javascript ###############################
+
+Liferay.Util.addParams('<portlet:namespace />status=' + status, uri);
