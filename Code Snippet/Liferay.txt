@@ -1,8 +1,13 @@
-
-##########get an image in server side (portlet)########################
+#########get an image in server side (portlet)########################
 
 resourceRequest.getPortletSession().getPortletContext().getResourceAsStream("/images/myImage.png");
 
+<<<<<<< HEAD
+=======
+############### Add param in javascript ###############################
+
+Liferay.Util.addParams('<portlet:namespace />status=' + status, uri);
+>>>>>>> 3f9c2511ffe1dccd86f8cabf858d3cb39c15d973
 
 ####################  validate form in aui #############################
 
@@ -25,4 +30,8 @@ if (form1) {
 	   }
 	}
 	
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 3f9c2511ffe1dccd86f8cabf858d3cb39c15d973
