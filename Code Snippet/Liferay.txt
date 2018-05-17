@@ -6,3 +6,26 @@ resourceRequest.getPortletSession().getPortletContext().getResourceAsStream("/im
 ############### Add param in javascript ###############################
 
 Liferay.Util.addParams('<portlet:namespace />status=' + status, uri);
+
+####################  validate form in aui #############################
+
+var form1 = Liferay.Form.get('<portlet:namespace />form1');
+				
+if (form1) {
+	
+	var validator = form1.formValidator;
+	
+	if (A.instanceOf(validator, A.FormValidator)) {
+		
+		validator.validate();
+		
+		hasErrors = validator.hasErrors();
+		
+		if (hasErrors) {
+		   validator.focusInvalidField();
+
+		   return;
+	   }
+	}
+	
+}
