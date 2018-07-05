@@ -1,0 +1,4 @@
+Bundle-Name: message-bus-module
+Bundle-SymbolicName: com.message.bus.test
+Bundle-Version: 1.0.0
+Export-Package: com.message.bus.test.constants

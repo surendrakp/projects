@@ -1,1 +1,1 @@
-liferay  portal
+liferay-7.0  portal custom modules
